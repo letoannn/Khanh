@@ -25,7 +25,7 @@ header h1 {
 }
 
 h2 {
-  color: #2980b9;
+  color: #bb1399;
 }
 
 ul {
@@ -40,7 +40,7 @@ footer {
 
 /* Accordion style */
 .accordion {
-  background-color: #2980b9;
+  background-color: #b92987;
   color: white;
   cursor: pointer;
   padding: 15px;
@@ -55,11 +55,11 @@ footer {
 }
 
 .accordion:hover {
-  background-color: #21618c;
+  background-color: #b922b9;
 }
 
 .panel {
-  background: white;
+  background: rgb(255, 227, 252);
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.3s ease-out;
@@ -69,4 +69,22 @@ footer {
 }
 .panel p, .panel ul {
   margin: 15px 0;
+}
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #16ca31;
+}
+
+.header-text {
+  flex: 1;
 }

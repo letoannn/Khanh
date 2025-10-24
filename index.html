@@ -1,93 +1,248 @@
-<!DOCTYPE html>
-<html lang="vi">
+<!doctype html>
+<html lang="vi" data-theme="light">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nguyễn Phạm Hà Khanh - CV Online</title>
-  <link rel="stylesheet" href="style.css"/>
-  
-<header>
-  <div class="profile-header">
-    <img src="avatar.jpg" 
-    alt="Avatar của Nguyễn Phạm Hà Khanh" 
-    class="avatar"
-    data-url="https://www.facebook.com/nguyenphamhakhanh"/>
-    <div class="header-text">
-      <h1>Nguyễn Phạm Hà Khanh</h1>
-      <p>Sinh viên Quan hệ Quốc tế | VUS | Vuihoc | Intimex Group</p>
-      <p>Email: hakhanh2802@gmail.com | Điện thoại: 0354015704</p>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nguyễn Phạm Hà Khanh — CV Online</title>
+  <meta name="description" content="CV online của Nguyễn Phạm Hà Khanh: Quan hệ Quốc tế, truyền thông & đối ngoại, giảng dạy, tổ chức sự kiện."/>
+  <meta name="color-scheme" content="light dark"/>
+  <meta name="theme-color" content="#111827"/>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nguyễn Phạm Hà Khanh — CV Online"/>
+  <meta property="og:description" content="Truyền thông & Đối ngoại | VUS | Vuihoc | Intimex Group | TEDxUEF"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="preview.jpg"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="avatar.jpg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nguyễn Phạm Hà Khanh",
+    "jobTitle": "Sinh viên Quan hệ Quốc tế",
+    "email": "mailto:hakhanh2802@gmail.com",
+    "telephone": "+84354015704",
+    "sameAs": ["https://www.facebook.com/nguyenphamhakhanh"],
+    "alumniOf": {"@type":"CollegeOrUniversity","name":"UEF"}
+  }
+  </script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Về đầu trang">
+        <img src="avatar.jpg" class="brand-avatar" alt="Ảnh đại diện Nguyễn Phạm Hà Khanh">
+        <span class="brand-title">Nguyễn Phạm Hà Khanh</span>
+      </a>
+      <nav class="nav-actions">
+        <a class="btn" href="mailto:hakhanh2802@gmail.com">✉️ Email</a>
+        <a class="btn" href="tel:+84354015704">📞 Gọi</a>
+        <button id="theme" class="btn icon" title="Chuyển sáng/tối (phím D)">🌓</button>
+        <button id="print" class="btn" title="In/Tải PDF (phím P)">🖨️ PDF</button>
+      </nav>
     </div>
-  </div>
-</header>
+  </header>
 
-    <!-- Các phần dưới đây sẽ là accordion -->
-    <div class="accordion-section">
-      <button class="accordion">🎓 Giới thiệu bản thân</button>
-      <div class="panel">
-        <p>
-          Sinh viên năm cuối ngành Quan hệ Quốc tế tại UEF với định hướng phát triển trong lĩnh vực Truyền thông và Đối ngoại. 
-          Có kinh nghiệm tổ chức sự kiện, làm việc với đối tác và nhà tài trợ. Tư duy chiến lược, khả năng giao tiếp tốt và tinh thần học hỏi là thế mạnh.
-        </p>
+  <!-- Hero -->
+  <section class="container hero" id="top">
+    <img src="avatar.jpg" class="avatar" alt="Ảnh đại diện" data-url="https://www.facebook.com/nguyenphamhakhanh">
+    <div>
+      <h1>Nguyễn Phạm Hà Khanh</h1>
+      <p class="subtitle">Sinh viên Quan hệ Quốc tế • Truyền thông & Đối ngoại • VUS • Vuihoc • Intimex Group</p>
+      <div class="chips">
+        <span class="chip">GPA 3.48/4.0</span>
+        <span class="chip">Thuyết trình</span>
+        <span class="chip">Tổ chức sự kiện</span>
+        <span class="chip">Content • Photoshop</span>
+        <span class="chip">Tiếng Anh</span>
       </div>
+      <div class="quick">
+        <a class="btn primary" href="#lien-he">Liên hệ ngay</a>
+        <a class="btn" href="https://www.facebook.com/nguyenphamhakhanh" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+  </section>
 
-      <button class="accordion">🏫 Học vấn</button>
-      <div class="panel">
+  <!-- Search + Stats -->
+  <section class="container grid">
+    <div class="card">
+      <h2>🔎 Tìm nhanh</h2>
+      <div class="search">
+        <input id="q" placeholder="Gõ để lọc các phần bên dưới… (phím /)" aria-label="Tìm nội dung">
+        <span class="kbd">/</span>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat">
+        <div class="num" data-count="3">0</div>
+        <div class="label">Năm hoạt động CLB</div>
+      </div>
+      <div class="stat">
+        <div class="num" data-count="20">0</div>
+        <div class="label">+ Sự kiện</div>
+      </div>
+      <div class="stat">
+        <div class="num" data-count="2">0</div>
+        <div class="label">Năm giảng dạy</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main grid -->
+  <main class="container grid">
+    <section class="left">
+      <article class="card section" data-title="giới thiệu">
+        <h2>🎓 Giới thiệu</h2>
+        <p>Sinh viên năm cuối ngành Quan hệ Quốc tế (UEF), định hướng <strong>Truyền thông</strong> và <strong>Đối ngoại</strong>. Có kinh nghiệm làm việc với đối tác/nhà tài trợ, tổ chức sự kiện quy mô CLB, mạnh về giao tiếp, viết nội dung, quản trị fanpage.</p>
+      </article>
+
+      <article class="card section" data-title="học vấn">
+        <h2>🏫 Học vấn</h2>
         <ul>
-          <li>Đại học Kinh tế - Tài chính TP.HCM (UEF) | GPA: 3.48/4.0</li>
-          <li>Đề tài nghiên cứu:
-            <ul>
-              <li>Việt - Mỹ: Quan hệ chiến lược toàn diện (2022-2023)</li>
-              <li>Trào lưu Tiktok và quyền lực mềm Việt Nam (2023-2024)</li>
-            </ul>
-          </li>
+          <li><strong>UEF</strong> — GPA 3.48/4.0</li>
+          <li><em>Đề tài:</em> Việt–Mỹ: Quan hệ chiến lược toàn diện (2022–2023); Trào lưu TikTok & quyền lực mềm Việt Nam (2023–2024)</li>
         </ul>
-      </div>
+      </article>
 
-      <button class="accordion">💼 Kinh nghiệm làm việc</button>
-      <div class="panel">
-        <ul>
-          <li><strong>Trợ giảng</strong> - VUS (2023 - 2024)</li>
-          <li><strong>Giáo viên Online</strong> - Vuihoc (2024 - nay)</li>
-          <li><strong>Thực tập sinh đối ngoại</strong> - Intimex Group (2022 - 2023)</li>
-        </ul>
-      </div>
+      <article class="card section" data-title="kinh nghiệm">
+        <h2>💼 Kinh nghiệm</h2>
+        <div class="timeline">
+          <div class="tl-item">
+            <h3>Giáo viên Online — Vuihoc <span class="meta">2024–nay</span></h3>
+            <p class="muted">Giảng dạy trực tuyến, quản lý lớp và giao tiếp phụ huynh.</p>
+          </div>
+          <div class="tl-item">
+            <h3>Trợ giảng — VUS <span class="meta">2023–2024</span></h3>
+            <p class="muted">Hỗ trợ lớp, theo dõi tiến độ học viên, tổ chức hoạt động.</p>
+          </div>
+          <div class="tl-item">
+            <h3>Thực tập sinh đối ngoại — Intimex Group <span class="meta">2022–2023</span></h3>
+            <p class="muted">Làm việc với đối tác/tài trợ, chuẩn bị hồ sơ & sự kiện.</p>
+          </div>
+        </div>
+      </article>
 
-      <button class="accordion">⭐ Kỹ năng</button>
-      <div class="panel">
+      <article class="card section" data-title="hoạt động">
+        <h2>🌟 Hoạt động nổi bật</h2>
         <ul>
-          <li>Giao tiếp, thuyết trình, làm việc nhóm, tổ chức sự kiện</li>
-          <li>Word, Excel, PowerPoint, xử lý dữ liệu cơ bản</li>
-          <li>Ngôn ngữ: Tiếng Việt, Tiếng Anh</li>
-          <li>Thiết kế: Photoshop, nội dung fanpage</li>
-        </ul>
-      </div>
-
-      <button class="accordion">🌟 Hoạt động nổi bật</button>
-      <div class="panel">
-        <ul>
-          <li>Phó ban Đối ngoại - TEDxUEF 2025</li>
-          <li>Tháp tùng đoàn Mozambique - Bộ Ngoại giao 2025</li>
-          <li>Truyền thông - Cuộc thi International Focus, CLB IRC</li>
-          <li>Thành viên CLB DPS, IRC | Truyền thông học thuật</li>
+          <li>Phó ban Đối ngoại — <strong>TEDxUEF 2025</strong></li>
+          <li>Tháp tùng đoàn Mozambique — <strong>Bộ Ngoại giao 2025</strong></li>
+          <li>Truyền thông — Cuộc thi <strong>International Focus</strong>, CLB IRC</li>
+          <li>CLB DPS, IRC — <em>Truyền thông học thuật</em></li>
           <li>Tình nguyện: Xuân tình nguyện, LEGO Play Day</li>
         </ul>
-      </div>
+      </article>
 
-      <button class="accordion">📞 Người tham chiếu</button>
-      <div class="panel">
-        <ul>
-          <li>Vũ Ngọc Linh - Intimex Group | 0823220034 | vnlinh2411@gmail.com</li>
-          <li>Lê Khánh Linh - Vuihoc | 0865378212 | LinhLK@vuihoc.vn</li>
-          <li>Trần Hoàng Cương - VUS | cuongtran@vus-etsc.edu.vn</li>
-        </ul>
-      </div>
-    </div>
+      <article class="card section" data-title="dự án">
+        <h2>📂 Dự án / Portfolio</h2>
+        <div class="gallery">
+          <figure class="g-item">
+            <img src="avatar.jpg" alt="Ảnh minh họa dự án">
+            <figcaption>
+              <h4>Chiến dịch truyền thông CLB</h4>
+              <p>KPI: +15k reach / 2 tuần, 6 đối tác tài trợ.</p>
+            </figcaption>
+          </figure>
+          <figure class="g-item">
+            <img src="avatar.jpg" alt="Ảnh minh họa dự án">
+            <figcaption>
+              <h4>Workshop Đối ngoại</h4>
+              <p>100+ người tham dự, 95% hài lòng sau khảo sát.</p>
+            </figcaption>
+          </figure>
+          <figure class="g-item">
+            <img src="avatar.jpg" alt="Ảnh minh họa dự án">
+            <figcaption>
+              <h4>Content Fanpage</h4>
+              <p>Lịch đăng 3–4 bài/tuần, tăng 2k follower/3 tháng.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </article>
 
-    <footer>
-      <p>&copy; 2025 Nguyễn Phạm Hà Khanh</p>
-    </footer>
+      <details class="acc card section" data-title="tham chiếu" open>
+        <summary>📞 Người tham chiếu</summary>
+        <div class="panel">
+          <ul>
+            <li>Vũ Ngọc Linh — Intimex Group | 0823220034 | <a href="mailto:vnlinh2411@gmail.com">vnlinh2411@gmail.com</a></li>
+            <li>Lê Khánh Linh — Vuihoc | 0865378212 | <a href="mailto:LinhLK@vuihoc.vn">LinhLK@vuihoc.vn</a></li>
+            <li>Trần Hoàng Cương — VUS | <a href="mailto:cuongtran@vus-etsc.edu.vn">cuongtran@vus-etsc.edu.vn</a></li>
+          </ul>
+        </div>
+      </details>
+    </section>
+
+    <aside class="right">
+      <article class="card section" data-title="kỹ năng">
+        <h2>⭐ Kỹ năng</h2>
+        <div class="skills">
+          <div class="skill"><b>Giao tiếp</b><div class="bar"><i style="--w:92%"></i></div></div>
+          <div class="skill"><b>Thuyết trình</b><div class="bar"><i style="--w:88%"></i></div></div>
+          <div class="skill"><b>Tổ chức sự kiện</b><div class="bar"><i style="--w:85%"></i></div></div>
+          <div class="skill"><b>Content • Fanpage</b><div class="bar"><i style="--w:84%"></i></div></div>
+          <div class="skill"><b>Word • Excel • PPT</b><div class="bar"><i style="--w:80%"></i></div></div>
+          <div class="skill"><b>Photoshop</b><div class="bar"><i style="--w:70%"></i></div></div>
+        </div>
+      </article>
+
+      <article class="card section" id="lien-he" data-title="liên hệ">
+        <h2>📬 Liên hệ</h2>
+        <p class="muted">Ưu tiên email/điện thoại. Có thể trao đổi qua Zoom/Meet.</p>
+        <div class="quick">
+          <a class="btn" href="mailto:hakhanh2802@gmail.com">✉️ Email</a>
+          <a class="btn" href="tel:+84354015704">📞 Điện thoại</a>
+          <button class="btn" id="copyLink">🔗 Copy link CV</button>
+          <button class="btn" id="share" disabled>📤 Chia sẻ</button>
+        </div>
+      </article>
+    </aside>
+  </main>
+
+  <!-- Floating -->
+  <div class="floating-cta">
+    <a class="btn primary" href="#lien-he">💼 Mời hợp tác</a>
+    <button class="btn icon" id="scrollTopBtn" title="Về đầu trang">⬆️</button>
   </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="#top">Đầu trang</a>
+      <a href="#lien-he">Liên hệ</a>
+      <a href="#" id="toTop">Lên đầu</a>
+    </div>
+    <p>© 2025 Nguyễn Phạm Hà Khanh • Made with ♥</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
+<!-- Sticky quick panel (bottom-right) — REPLACE -->
+<aside class="sticky-right" aria-label="Kết nối nhanh">
+  <div class="sticky-card" role="dialog" aria-labelledby="stickyTitle">
+    <button class="btn icon sticky-toggle" id="stickyToggle" title="Thu gọn (–)" aria-label="Thu gọn">➖</button>
+
+    <div class="sticky-row">
+      <span class="sticky-dot"></span>
+      <b id="stickyTitle">Sẵn sàng hợp tác</b>
+    </div>
+    <p class="sticky-sub">Ưu tiên Email/Điện thoại — phản hồi sớm.</p>
+    <div class="sticky-actions">
+      <a class="btn" href="mailto:hakhanh2802@gmail.com">✉️ Email</a>
+      <a class="btn" href="tel:+84354015704">📞 Gọi</a>
+      <button class="btn" id="share2" disabled>📤 Chia sẻ</button>
+    </div>
+    <div class="sticky-mini">
+      <button class="btn icon" id="copyLink2" title="Copy link CV">🔗</button>
+      <button class="btn icon" id="theme2" title="Đổi giao diện">🌓</button>
+    </div>
+  </div>
+
+  <!-- Tab nhỏ xuất hiện khi thu gọn, bấm để mở -->
+  <button class="sticky-tab" id="stickyTab" aria-label="Mở lại panel" title="Mở lại">◀</button>
+</aside>
+
 </html>
